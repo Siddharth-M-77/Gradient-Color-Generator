@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Color</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        
+        background-image: linear-gradient(to right top , #30fde3,#84da5e);
+      
+      }
+      section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vw;
+      }
+      #btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4vw;
+        cursor: pointer;
+      }
+      #btn1 {
+        padding: 1vw 2vw;
+        background-color: #151515;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      #btn2 {
+        padding: 1vw 2vw;
+        background-color: #151515;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+      .text {
+        /* box-shadow: 10px 20px 10px rgba(0,0,0,0.8); */
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.8));
+        padding: 1vw 2vw;
+        border-radius: 50px;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .code {
+        filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.8));
+        cursor: pointer;
+        padding: 1vw 2vw;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.4);
+        & p {
+          font-size: 1.4vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="btns">
+        <button id="btn1">#000000</button>
+        <button id="btn2">#AAAAAA</button>
+      </div>
+      <h5 class="text">FOR COPY THE CODE CLICK BELOW 👇👇👇</h5>
+      <div class="code">
+        background-image: linear-gradient(to right top , rgb(100,132,44),
+        rgb(23,122,40));
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
